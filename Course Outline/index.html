@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master the MERN Stack (MongoDB, Express, React, Node.js) with our comprehensive course. From fundamentals to advanced topics with real-world projects.">
+    <meta name="keywords" content="MERN stack, web development, MongoDB, Express, React, Node.js, JavaScript, full-stack development">
+    <meta name="author" content="Waseem Adil">
+    <meta property="og:title" content="MERN Stack Course | Become a Full-Stack Developer">
+    <meta property="og:description" content="Learn to build full-stack applications with MongoDB, Express, React, and Node.js">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mernmaster.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <title>MERN Stack Course | Become a Full-Stack Developer</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/react-native.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">MERN<span>Master</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="enroll-btn">Enroll Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Master the <span>MERN</span> <br>Stack <span>Development</span><br>Journey</h1>
+                <p>From understanding the Internet basics to building full-stack applications with MongoDB, Express, React, and Node.js</p>
+                <div class="cta-buttons">
+                    <a href="https://chat.whatsapp.com/JtXBrxcXm2F3umeTtBONg7" target="_blank" class="hero-btn primary-btn">Get Started</a>
+                    <a href="#curriculum" class="hero-btn outline-btn">View Curriculum</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-text">Learning Phases</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-text">Projects</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-text">Support</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Web Development" class="hero-image">
+                
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>
+<span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;
+
+<span class="keyword">const</span> <span class="function">App</span> = () => {
+  <span class="keyword">return</span> (
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;h1&gt;</span>Hello, MERN Stack!<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  );
+}
+
+<span class="keyword">export</span> <span class="keyword">default</span> App;
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="floating-chat-widget">
+            <a href="https://wa.me/923056609787" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chat with instructor</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="curriculum" class="phases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive <span>Curriculum</span></h2>
+                <p>Our in-depth curriculum takes you from internet fundamentals to building advanced full-stack applications</p>
+            </div>
+            
+            <div class="curriculum-path">
+                <div class="path-line"></div>
+                <div class="curriculum-phases">
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">01</div>
+                        <div class="phase-details">
+                            <h3>Internet & Networking Fundamentals</h3>
+                            <p>Master the core concepts that power the web</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> Internet Architecture & History</li>
+                                <li><i class="fas fa-check-circle"></i> Domain Name System (DNS)</li>
+                                <li><i class="fas fa-check-circle"></i> Server-Client Architecture</li>
+                                <li><i class="fas fa-check-circle"></i> TCP/IP & UDP Protocols</li>
+                                <li><i class="fas fa-check-circle"></i> HTTP/HTTPS & RESTful Services</li>
+                                <li><i class="fas fa-check-circle"></i> Web Security Fundamentals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">02</div>
+                        <div class="phase-details">
+                            <h3>Frontend Foundations: HTML & CSS</h3>
+                            <p>Create responsive and beautiful user interfaces</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> Modern HTML5 Semantics & Best Practices</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced Form Handling & Validation</li>
+                                <li><i class="fas fa-check-circle"></i> CSS3 & Modern Layout Techniques</li>
+                                <li><i class="fas fa-check-circle"></i> Flexbox & CSS Grid Systems</li>
+                                <li><i class="fas fa-check-circle"></i> Responsive Design & Media Queries</li>
+                                <li><i class="fas fa-check-circle"></i> CSS Variables & Custom Properties</li>
+                                <li><i class="fas fa-check-circle"></i> CSS Animations & Transitions</li>
+                                <li><i class="fas fa-check-circle"></i> Tailwind CSS & Bootstrap Frameworks</li>
+                                <li><i class="fas fa-check-circle"></i> SASS/SCSS for Enhanced Styling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">03</div>
+                        <div class="phase-details">
+                            <h3>JavaScript Mastery</h3>
+                            <p>Harness the power of modern JavaScript</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> JavaScript Fundamentals & ES6+ Features</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced Functions & Closures</li>
+                                <li><i class="fas fa-check-circle"></i> Working with Arrays & Objects</li>
+                                <li><i class="fas fa-check-circle"></i> DOM Manipulation & Event Handling</li>
+                                <li><i class="fas fa-check-circle"></i> Asynchronous JavaScript (Promises, Async/Await)</li>
+                                <li><i class="fas fa-check-circle"></i> Fetch API & AJAX</li>
+                                <li><i class="fas fa-check-circle"></i> Error Handling & Debugging</li>
+                                <li><i class="fas fa-check-circle"></i> Modern JavaScript Patterns</li>
+                                <li><i class="fas fa-check-circle"></i> Local Storage & Cookies</li>
+                                <li><i class="fas fa-check-circle"></i> Web APIs & Browser Integration</li>
+                                <li><i class="fas fa-check-circle"></i> Unit Testing with Jest</li>
+                            </ul>
+                            <div class="project-highlight">
+                                <h4><i class="fas fa-code-branch"></i> Projects:</h4>
+                                <p>Todo App, Weather Dashboard, E-commerce UI, Quiz Application, Expense Tracker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">04</div>
+                        <div class="phase-details">
+                            <h3>Backend with Node.js & Express</h3>
+                            <p>Build powerful server-side applications</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> Node.js Core Concepts & Architecture</li>
+                                <li><i class="fas fa-check-circle"></i> Node.js Module System</li>
+                                <li><i class="fas fa-check-circle"></i> Event Loop & Asynchronous Programming</li>
+                                <li><i class="fas fa-check-circle"></i> Express.js Framework Fundamentals</li>
+                                <li><i class="fas fa-check-circle"></i> RESTful API Design Principles</li>
+                                <li><i class="fas fa-check-circle"></i> Middleware Development & Implementation</li>
+                                <li><i class="fas fa-check-circle"></i> Error Handling in Express</li>
+                                <li><i class="fas fa-check-circle"></i> Authentication (JWT, OAuth, Sessions)</li>
+                                <li><i class="fas fa-check-circle"></i> API Security & Best Practices</li>
+                                <li><i class="fas fa-check-circle"></i> MongoDB Integration & Mongoose ODM</li>
+                                <li><i class="fas fa-check-circle"></i> Data Validation & Sanitization</li>
+                                <li><i class="fas fa-check-circle"></i> File Uploads & Storage Solutions</li>
+                                <li><i class="fas fa-check-circle"></i> Real-time Applications with Socket.io</li>
+                                <li><i class="fas fa-check-circle"></i> API Documentation with Swagger</li>
+                                <li><i class="fas fa-check-circle"></i> Testing APIs with Jest & Supertest</li>
+                            </ul>
+                            <div class="project-highlight">
+                                <h4><i class="fas fa-code-branch"></i> Projects:</h4>
+                                <p>RESTful API Development, Authentication System, Task Manager API, E-commerce Backend, Real-time Chat API</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">05</div>
+                        <div class="phase-details">
+                            <h3>MongoDB Database</h3>
+                            <p>Work with NoSQL databases efficiently</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> NoSQL Database Concepts</li>
+                                <li><i class="fas fa-check-circle"></i> MongoDB CRUD Operations</li>
+                                <li><i class="fas fa-check-circle"></i> Data Modeling & Schema Design</li>
+                                <li><i class="fas fa-check-circle"></i> Mongoose ODM in Depth</li>
+                                <li><i class="fas fa-check-circle"></i> Indexing & Query Optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Aggregation Framework</li>
+                                <li><i class="fas fa-check-circle"></i> Transactions & Data Consistency</li>
+                                <li><i class="fas fa-check-circle"></i> Atlas Cloud Database</li>
+                                <li><i class="fas fa-check-circle"></i> Database Security Best Practices</li>
+                                <li><i class="fas fa-check-circle"></i> Backup & Recovery Strategies</li>
+                                <li><i class="fas fa-check-circle"></i> Performance Monitoring & Tuning</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">06</div>
+                        <div class="phase-details">
+                            <h3>React.js Frontend Framework</h3>
+                            <p>Build modern, reactive user interfaces</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> React Core Concepts & JSX</li>
+                                <li><i class="fas fa-check-circle"></i> Component Architecture</li>
+                                <li><i class="fas fa-check-circle"></i> Props & State Management</li>
+                                <li><i class="fas fa-check-circle"></i> Hooks System (useState, useEffect, useContext)</li>
+                                <li><i class="fas fa-check-circle"></i> Custom Hooks Development</li>
+                                <li><i class="fas fa-check-circle"></i> React Router for Navigation</li>
+                                <li><i class="fas fa-check-circle"></i> Context API for State Management</li>
+                                <li><i class="fas fa-check-circle"></i> Redux & Redux Toolkit</li>
+                                <li><i class="fas fa-check-circle"></i> API Integration & Axios</li>
+                                <li><i class="fas fa-check-circle"></i> Form Management with Formik & Yup</li>
+                                <li><i class="fas fa-check-circle"></i> React Query for Data Fetching</li>
+                                <li><i class="fas fa-check-circle"></i> Performance Optimization Techniques</li>
+                                <li><i class="fas fa-check-circle"></i> Component Testing with React Testing Library</li>
+                                <li><i class="fas fa-check-circle"></i> Styling in React (CSS Modules, Styled Components)</li>
+                                <li><i class="fas fa-check-circle"></i> UI Libraries (Material-UI, Chakra UI)</li>
+                            </ul>
+                            <div class="project-highlight">
+                                <h4><i class="fas fa-code-branch"></i> Projects:</h4>
+                                <p>Social Media Dashboard, E-commerce Frontend, Admin Panel, Portfolio Site, Project Management App</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">07</div>
+                        <div class="phase-details">
+                            <h3>Full-Stack Integration & Deployment</h3>
+                            <p>Connect all pieces and launch your applications</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> MERN Stack Architecture & Design Patterns</li>
+                                <li><i class="fas fa-check-circle"></i> Full-Stack Authentication Flow</li>
+                                <li><i class="fas fa-check-circle"></i> State Management Across Stack</li>
+                                <li><i class="fas fa-check-circle"></i> API Integration Best Practices</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced Error Handling & Logging</li>
+                                <li><i class="fas fa-check-circle"></i> Environment Configuration</li>
+                                <li><i class="fas fa-check-circle"></i> Continuous Integration/Deployment (CI/CD)</li>
+                                <li><i class="fas fa-check-circle"></i> Containerization with Docker</li>
+                                <li><i class="fas fa-check-circle"></i> Cloud Deployment (AWS, Heroku, Vercel)</li>
+                                <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Security Best Practices</li>
+                                <li><i class="fas fa-check-circle"></i> Monitoring & Analytics</li>
+                                <li><i class="fas fa-check-circle"></i> SEO Optimization for MERN Apps</li>
+                            </ul>
+                            <div class="project-highlight">
+                                <h4><i class="fas fa-code-branch"></i> Final Project:</h4>
+                                <p>Complete Full-Stack Application including authentication, database integration, frontend UI, and deployment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-phase">
+                        <div class="phase-badge">08</div>
+                        <div class="phase-details">
+                            <h3>Advanced Topics & Modern Development</h3>
+                            <p>Stay ahead with cutting-edge technologies</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check-circle"></i> Next.js Framework</li>
+                                <li><i class="fas fa-check-circle"></i> TypeScript Integration</li>
+                                <li><i class="fas fa-check-circle"></i> GraphQL APIs</li>
+                                <li><i class="fas fa-check-circle"></i> Progressive Web Apps (PWAs)</li>
+                                <li><i class="fas fa-check-circle"></i> Serverless Architecture</li>
+                                <li><i class="fas fa-check-circle"></i> Microservices with Node.js</li>
+                                <li><i class="fas fa-check-circle"></i> Redis for Caching</li>
+                                <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+                                <li><i class="fas fa-check-circle"></i> WebSockets & Real-time Features</li>
+                                <li><i class="fas fa-check-circle"></i> Headless CMS Integration</li>
+                                <li><i class="fas fa-check-circle"></i> Mobile Development with React Native</li>
+                                <li><i class="fas fa-check-circle"></i> AI & Machine Learning Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="curriculum-footer">
+                <p>Our curriculum is constantly updated to include the latest industry practices and technologies</p>
+                <button class="primary-btn">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose This <span>Course</span></h2>
+                <p>A comprehensive learning experience designed to transform you into a professional MERN stack developer</p>
+            </div>
+            <div class="features-container">
+                <div class="feature-row">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Practical Projects</h3>
+                        <p>Build 20+ real-world projects to reinforce learning and enhance your portfolio</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full Stack Coverage</h3>
+                        <p>Master both frontend and backend technologies in a single comprehensive course</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Get help whenever you need it with our responsive support system</p>
+                    </div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Industry Recognition</h3>
+                        <p>Earn a certificate that demonstrates your expertise to potential employers</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Modern Curriculum</h3>
+                        <p>Learn the latest technologies and best practices used in the industry today</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Expert Instructor</h3>
+                        <p>Learn from an experienced developer with 10-15 real-world projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="instructor">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Your <span>Instructor</span></h2>
+                <p>Learn from an experienced developer who has built numerous real-world applications</p>
+            </div>
+            <div class="instructor-card">
+                <div class="instructor-header">
+                    <h2>Waseem Adil</h2>
+                    <div class="instructor-title">MERN Stack Specialist</div>
+                </div>
+                
+                <div class="instructor-content">
+                    <div class="instructor-image-container">
+                        <div class="instructor-image">
+                            <img src="profile.jpeg" alt="Waseem Adil - MERN Stack Developer">
+                        </div>
+                    </div>
+                    
+                    <div class="instructor-details">
+                        <div class="bio-container">
+                            <p class="bio-text">
+                                Over the past two years, I've built between 10 to 15 full-stack projects as part of my freelance work. 
+                                Alongside these larger projects, I've also completed many smaller ones, which has helped me gain a deep 
+                                understanding of web development.
+                            </p>
+                            <p class="bio-text">
+                                I've gained hands-on experience in both frontend and backend technologies, allowing me to provide 
+                                comprehensive and practical insights. In this course, we will cover both high-level and low-level 
+                                system design, which are essential for building scalable and efficient applications.
+                            </p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">waseemadilcode@gmail.com</div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info">+92 305 6609787</div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-info">WhatsApp available for student support</div>
+                            </div>
+
+                            <div class="social-contact-links">
+                                <a href="https://www.youtube.com/@wasimadildev" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/in/wasimadildev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/wasimadildev" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://x.com/wasimadildev" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructor-stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Students</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span>Questions</span></h2>
+                <p>Find answers to common questions about our MERN stack course</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to complete the course?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The course is designed to be completed in 3-6 months depending on your pace and prior experience. You'll have lifetime access to all course materials, so you can learn at your own pace.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need prior programming experience?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While prior programming experience is helpful, it's not required. The course starts with fundamentals and progressively builds up to more complex topics. Complete beginners may need to dedicate more time to the early modules.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will I get a certificate upon completion?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you'll receive a course completion certificate that you can add to your resume and LinkedIn profile. More importantly, you'll have a portfolio of real-world projects to showcase your skills to potential employers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I get help if I'm stuck?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll have access to a private WhatsApp community where you can ask questions and get help from the instructor and fellow students. We also offer one-on-one support sessions for complex issues.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the projects suitable for my portfolio?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! The projects are designed to be portfolio-worthy and cover a wide range of applications. You'll build everything from simple apps to complex full-stack applications that demonstrate your skills to potential employers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the course kept up-to-date?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we regularly update the course content to reflect the latest industry trends, tools, and best practices. When major updates to the MERN stack technologies occur, we add new content to keep you current.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your MERN Stack Journey?</h2>
+                <p>Join hundreds of successful developers who have transformed their careers with this course</p>
+                <div class="cta-buttons">
+                    <a href="https://chat.whatsapp.com/JtXBrxcXm2F3umeTtBONg7" target="_blank" class="cta-btn primary-btn">Enroll Now</a>
+                    <a href="https://chat.whatsapp.com/JtXBrxcXm2F3umeTtBONg7" target="_blank" class="cta-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Join WhatsApp community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">MERN<span>Master</span></div>
+                    <p>Your journey to becoming a full-stack developer starts here</p>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <a href="mailto:waseemadilcode@gmail.com">
+                                    <i class="far fa-envelope"></i>
+                                    <span>waseemadilcode@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+923056609787">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+92 305 6609787</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://chat.whatsapp.com/JtXBrxcXm2F3umeTtBONg7" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Join WhatsApp Community</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Waseem Adil - MERN Stack Developer. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@wasimadildev" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/wasimadildev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/wasimadildev" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/wasimadildev" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://chat.whatsapp.com/JtXBrxcXm2F3umeTtBONg7" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Floating WhatsApp Contact Button -->
+    <a href="https://wa.me/923056609787" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+</html>

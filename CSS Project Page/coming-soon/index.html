@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - TechProduct</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <span>Tech</span>Product
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <h1>Something <span>Amazing</span> Is Coming Soon</h1>
+            <p class="description">We're working hard to finish the development of our new product. Sign up for our newsletter and be the first to know when we launch!</p>
+            
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-number">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Get Notified When We Launch</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Notify Me</button>
+                </form>
+                <p class="privacy-note">We respect your privacy. No spam emails, ever.</p>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    
+    <script>
+        // Set the launch date (YYYY, MM (0-based), DD, HH, MM, SS)
+        const launchDate = new Date(2023, 11, 31, 0, 0, 0).getTime();
+        
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            // Get the current date and time
+            const now = new Date().getTime();
+            
+            // Find the time difference between now and the launch date
+            const timeDifference = launchDate - now;
+            
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            
+            // Display the result
+            document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+            document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+            
+            // If the countdown is over, display a message
+            if (timeDifference < 0) {
+                clearInterval(countdown);
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+            }
+        }, 1000);
+    </script>
+</body>
+</html> 

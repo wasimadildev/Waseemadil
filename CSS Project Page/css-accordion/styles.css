@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.accordion {
+    margin-bottom: 40px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 15px;
+}
+
+.accordion-toggle {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-weight: 600;
+    color: #1a202c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accordion-title span {
+    padding-right: 15px;
+    font-size: 1.05rem;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+    color: #4a5568;
+}
+
+.accordion-toggle:checked ~ .accordion-title .icon {
+    transform: rotate(180deg);
+    color: #5a67d8;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px 0 0;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.accordion-toggle:checked ~ .accordion-content {
+    max-height: 300px;
+    padding-bottom: 20px;
+}
+
+.accordion-toggle:checked ~ .accordion-title {
+    color: #5a67d8;
+}
+
+.accordion-content p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.still-questions {
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.still-questions h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1a202c;
+}
+
+.still-questions p {
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #5a67d8;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    .accordion-title span {
+        font-size: 1rem;
+    }
+} 

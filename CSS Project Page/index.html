@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhance your CSS skills with our curated collection of practical projects. Learn modern CSS techniques through hands-on practice.">
+    <meta name="keywords" content="CSS projects, web development, CSS techniques, frontend development, CSS practice, learning CSS">
+    <meta name="author" content="Waseem Adil">
+    <meta property="og:title" content="CSS Projects Collection | Improve Your Frontend Skills">
+    <meta property="og:description" content="Enhance your CSS skills with our curated collection of practical projects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://waseemadil.com/css-projects">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2">
+    <title>CSS Projects Collection | Improve Your Frontend Skills</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/css3.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">CSS<span>Projects</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="../Course/index.html" class="mern-course-btn" target="_blank">MERN Course <i class="fas fa-external-link-alt"></i></a>
+            <a href="../index.html" class="portfolio-btn">Portfolio</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Master <span>CSS</span> Through <span>Practical</span> Projects</h1>
+                <p>Enhance your styling skills with our curated collection of hands-on CSS projects</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="hero-btn primary-btn">Browse Projects</a>
+                    <a href="#resources" class="hero-btn outline-btn">Learning Resources</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-text">Projects</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-text">CSS Techniques</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-text">Free</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="CSS Styling" class="hero-image">
+                
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>
+<span class="keyword">.container</span> {
+  <span class="function">display</span>: <span class="string">flex</span>;
+  <span class="function">justify-content</span>: <span class="string">center</span>;
+  <span class="function">align-items</span>: <span class="string">center</span>;
+  <span class="function">min-height</span>: <span class="string">100vh</span>;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="floating-chat-widget">
+            <a href="https://wa.me/923056609787" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>Get help</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>CSS <span>Projects</span> Collection</h2>
+                <p>Enhance your CSS skills with these hands-on practice projects. Each project focuses on different CSS concepts and techniques.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Regular project cards -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="CSS Accordion">
+                    </div>
+                    <div class="project-content">
+                        <h3>CSS Accordion</h3>
+                        <p>Build an interactive accordion component using only CSS. Learn advanced selectors and transitions.</p>
+                        <div class="project-tags">
+                            <span><i class="fas fa-tags"></i> Interaction</span>
+                            <span><i class="fas fa-film"></i> Animation</span>
+                            <span><i class="fas fa-code"></i> Selectors</span>
+                        </div>
+                        <a href="css-accordion/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586282391129-76a6df230234?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Certificate Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Certificate Design</h3>
+                        <p>Create beautiful certificate designs using CSS styling techniques.</p>
+                        <div class="project-tags">
+                            <span><i class="fas fa-th"></i> Layout</span>
+                            <span><i class="fas fa-font"></i> Typography</span>
+                            <span><i class="fas fa-border-style"></i> Borders</span>
+                        </div>
+                        <a href="certificate-design/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Menu">
+                    </div>
+                    <div class="project-content">
+                        <h3>Restaurant Menu</h3>
+                        <p>Design an elegant restaurant menu with CSS styling.</p>
+                        <div class="project-tags">
+                            <span><i class="fas fa-th-large"></i> Flexbox</span>
+                            <span><i class="fas fa-font"></i> Typography</span>
+                            <span><i class="fas fa-palette"></i> Colors</span>
+                        </div>
+                        <a href="restaurant-menu/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/coming-soon.jpg" alt="Coming Soon Page" onerror="this.src='https://via.placeholder.com/350x220?text=Coming+Soon'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Coming Soon Page</h3>
+                        <p>Create an engaging "coming soon" landing page with CSS.</p>
+                        <div class="project-tags">
+                            <span>Animations</span>
+                            <span>Centering</span>
+                            <span>Gradients</span>
+                        </div>
+                        <a href="coming-soon/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/music-playlist.jpg" alt="Music Playlist" onerror="this.src='https://via.placeholder.com/350x220?text=Music+Playlist'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Music Playlist</h3>
+                        <p>Style a music playlist interface with CSS.</p>
+                        <div class="project-tags">
+                            <span>Lists</span>
+                            <span>Media Controls</span>
+                            <span>Interaction</span>
+                        </div>
+                        <a href="music-playlist/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/photo-gallery.jpg" alt="Photo Gallery" onerror="this.src='https://via.placeholder.com/350x220?text=Photo+Gallery'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Photo Gallery</h3>
+                        <p>Build a responsive photo gallery using CSS Grid and Flexbox.</p>
+                        <div class="project-tags">
+                            <span>Grid</span>
+                            <span>Flexbox</span>
+                            <span>Responsive</span>
+                        </div>
+                        <a href="photo-gallery/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/resume-template.jpg" alt="Resume Template" onerror="this.src='https://via.placeholder.com/350x220?text=Resume+Template'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Resume Template</h3>
+                        <p>Create a professional resume layout with CSS.</p>
+                        <div class="project-tags">
+                            <span>Layout</span>
+                            <span>Typography</span>
+                            <span>Print Styles</span>
+                        </div>
+                        <a href="resume-template/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/movie-card.jpg" alt="Movie Card" onerror="this.src='https://via.placeholder.com/350x220?text=Movie+Card'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Card</h3>
+                        <p>Design attractive movie cards with CSS styling.</p>
+                        <div class="project-tags">
+                            <span>Cards</span>
+                            <span>Hover Effects</span>
+                            <span>Typography</span>
+                        </div>
+                        <a href="movie-card/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/event-invitation.jpg" alt="Event Invitation" onerror="this.src='https://via.placeholder.com/350x220?text=Event+Invitation'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Event Invitation</h3>
+                        <p>Create a stylish event invitation with CSS.</p>
+                        <div class="project-tags">
+                            <span>Layout</span>
+                            <span>Typography</span>
+                            <span>Colors</span>
+                        </div>
+                        <a href="event-invitation/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/digital-business-card.jpg" alt="Digital Business Card" onerror="this.src='https://via.placeholder.com/350x220?text=Digital+Business+Card'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital Business Card</h3>
+                        <p>Design a modern digital business card with CSS.</p>
+                        <div class="project-tags">
+                            <span>Layout</span>
+                            <span>Animations</span>
+                            <span>Effects</span>
+                        </div>
+                        <a href="digital-business-card/index.html" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning <span>Resources</span></h2>
+                <p>Helpful resources to support your CSS learning journey</p>
+            </div>
+            
+            <div class="features-container">
+                <div class="feature-row">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Documentation</h3>
+                        <p>Access comprehensive CSS documentation and references to deepen your understanding.</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="feature-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Code Examples</h3>
+                        <p>Explore code examples and patterns to improve your CSS implementation skills.</p>
+                        <a href="https://css-tricks.com" target="_blank" class="feature-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Tutorials</h3>
+                        <p>Follow step-by-step tutorials to master CSS concepts and techniques.</p>
+                        <a href="https://www.freecodecamp.org/news/tag/css/" target="_blank" class="feature-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to improve your CSS skills?</h2>
+                <p>Start with these projects and take your frontend development to the next level.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-btn primary-btn">Browse Projects</a>
+                    <a href="https://wa.me/923056609787" target="_blank" class="cta-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Get Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">CSS<span>Projects</span></div>
+                    <p>A collection of CSS projects to help you improve your frontend development skills.</p>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Documentation</a></li>
+                            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                            <li><a href="https://web.dev/learn/css/" target="_blank">Learn CSS</a></li>
+                            <li><a href="../Course/index.html" target="_blank">MERN Course</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul class="footer-contact">
+                            <li><a href="mailto:waseemadil@example.com"><i class="fas fa-envelope"></i> waseemadil@example.com</a></li>
+                            <li><a href="tel:+923056609787"><i class="fas fa-phone"></i> +92 305 6609787</a></li>
+                            <li><a href="https://wa.me/923056609787" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span class="current-year">2023</span> CSS Projects Collection. All Rights Reserved.
+                </div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        // Update footer year
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 

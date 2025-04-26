@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Photo Gallery</h1>
+            <p>A collection of beautiful landscapes and urban photography</p>
+        </header>
+
+        <div class="filter-options">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="urban">Urban</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Mountain Landscape">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Mountain Vista</h3>
+                            <p>Breathtaking mountain range at sunset</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" data-category="urban">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="City Skyline">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Urban Skyline</h3>
+                            <p>Modern city skyline at dusk</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1682686580186-b55d2a91053c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Ocean Waves">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Ocean Tranquility</h3>
+                            <p>Peaceful ocean waves at sunrise</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" data-category="people">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1469571486292-b53601020a8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Adventure Hiking">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Mountain Explorer</h3>
+                            <p>Hiker enjoying the majestic view</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item" data-category="urban">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="City Street">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Urban Street</h3>
+                            <p>Colorful city street with vintage buildings</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Forest">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Enchanted Forest</h3>
+                            <p>Mysterious forest with morning fog</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item" data-category="people">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Portrait">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Urban Portrait</h3>
+                            <p>Stylish portrait in city environment</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item" data-category="urban">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1542840843-3349799cded6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Architecture">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Modern Architecture</h3>
+                            <p>Stunning contemporary building design</p>
+                            <a href="#" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption"></div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const captionText = document.querySelector('.modal-caption');
+        const closeModal = document.querySelector('.close-modal');
+
+        // Open modal when image is clicked
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const imgSrc = this.closest('.gallery-item').querySelector('img').src;
+                const imgTitle = this.closest('.overlay-content').querySelector('h3').innerText;
+                const imgDesc = this.closest('.overlay-content').querySelector('p').innerText;
+                
+                modal.style.display = 'flex';
+                modalImg.src = imgSrc;
+                captionText.innerHTML = `<h3>${imgTitle}</h3><p>${imgDesc}</p>`;
+            });
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the image
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                this.classList.add('active');
+                
+                // Filter gallery items
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

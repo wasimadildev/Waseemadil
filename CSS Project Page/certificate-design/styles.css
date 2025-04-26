@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #1a5276;
+    --secondary-color: #d4af37;
+    --text-color: #2c3e50;
+    --light-color: #f5f5f5;
+    --border-color: #d4af37;
+    --certificate-bg: #fff;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certificate {
+    background-color: var(--certificate-bg);
+    position: relative;
+    border: 2px solid var(--border-color);
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    aspect-ratio: 1.414 / 1; /* A4 paper ratio */
+}
+
+/* Certificate Border */
+.certificate-border {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid var(--border-color);
+    pointer-events: none;
+}
+
+.corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--border-color);
+}
+
+.corner-tl {
+    top: -15px;
+    left: -15px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-tr {
+    top: -15px;
+    right: -15px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.corner-bl {
+    bottom: -15px;
+    left: -15px;
+    border-right: none;
+    border-top: none;
+}
+
+.corner-br {
+    bottom: -15px;
+    right: -15px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Certificate Header */
+.certificate-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--primary-color);
+}
+
+.logo i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.certificate-subheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--border-color);
+    width: 100px;
+}
+
+.emblem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    margin: 0 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* Certificate Body */
+.certificate-body {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.presented-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.recipient-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.completion-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.course-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.certificate-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.detail-value {
+    color: var(--text-color);
+}
+
+/* Certificate Footer */
+.certificate-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+
+.signature {
+    text-align: center;
+    width: 200px;
+}
+
+.signature-line {
+    height: 1px;
+    background-color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.signature-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.signature-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.certificate-seal {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.seal-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    box-shadow: 0 0 0 5px rgba(26, 82, 118, 0.2);
+}
+
+.seal-inner::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px dashed var(--border-color);
+    border-radius: 50%;
+}
+
+/* Print Button */
+.print-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.print-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.print-btn:hover {
+    background-color: #154360;
+}
+
+.print-btn i {
+    margin-right: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .certificate {
+        padding: 40px 30px;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+    }
+    
+    .recipient-name {
+        font-size: 2.8rem;
+    }
+    
+    .course-name {
+        font-size: 1.6rem;
+    }
+    
+    .certificate-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .certificate-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .signature {
+        width: 180px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .certificate {
+        box-shadow: none;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        height: 100vh;
+        page-break-inside: avoid;
+    }
+    
+    .print-controls {
+        display: none;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .recipient-name {
+        font-size: 3rem;
+    }
+    
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+} 

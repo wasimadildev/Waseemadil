@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Achievement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="certificate">
+            <div class="certificate-header">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Waseem Adil</span>
+                </div>
+                <h1 class="title">Certificate of Achievement</h1>
+                <div class="certificate-subheader">
+                    <div class="line"></div>
+                    <div class="emblem"><i class="fas fa-award"></i></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            
+            <div class="certificate-body">
+                <p class="presented-text">This is to certify that</p>
+                <h2 class="recipient-name">Ali Hamaza</h2>
+                <p class="completion-text">has successfully completed the course</p>
+                <h3 class="course-name">Advanced Web Development</h3>
+                <p class="description">with dedication and excellence, demonstrating proficiency in HTML, CSS, JavaScript, and modern frameworks. This achievement represents 120 hours of comprehensive training and practical application.</p>
+                
+                <div class="certificate-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date of Completion:</span>
+                        <span class="detail-value">April 15, 2022</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Certificate ID:</span>
+                        <span class="detail-value">GA-WD-2023-1895</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-footer">
+                <div class="signature signature-1">
+                    <div class="signature-line"></div>
+                    <p class="signature-name">M Waseem Adil</p>
+                    <p class="signature-title">Course Instructor</p>
+                </div>
+                
+                <div class="certificate-seal">
+                    <div class="seal-inner">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                
+                <div class="signature signature-2">
+                    <div class="signature-line"></div>
+                    <p class="signature-name">Waseem Adil</p>
+                    <p class="signature-title">Program Director</p>
+                </div>
+            </div>
+            
+            <div class="certificate-border">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+            </div>
+        </div>
+        
+        <div class="print-controls">
+            <button id="print-btn" class="print-btn">
+                <i class="fas fa-print"></i> Print Certificate
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('print-btn').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+</body>
+</html> 

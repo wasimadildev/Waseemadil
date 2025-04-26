@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Only Accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CSS-Only Accordion</h1>
+            <p>An interactive accordion component built with pure CSS - no JavaScript required!</p>
+            <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="info-section">
+            <h2>How It Works</h2>
+            <p>This accordion uses the CSS <code>:checked</code> pseudo-class with hidden checkboxes to create interactive elements without JavaScript. Click on any section header to expand or collapse its content.</p>
+        </section>
+
+        <section class="accordion-section">
+            <h2>Example Accordion</h2>
+            
+            <div class="accordion">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-1" class="accordion-toggle" checked>
+                    <label for="accordion-1" class="accordion-header">
+                        <span class="accordion-title">What is CSS?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <p>CSS (Cascading Style Sheets) is the code that styles web content. CSS is a stylesheet language that allows you to control exactly how HTML elements look in the browser, allowing you to create beautiful, responsive designs.</p>
+                        <p>With CSS, you can style text, control layout, add animations, and more - all without JavaScript!</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-2" class="accordion-toggle">
+                    <label for="accordion-2" class="accordion-header">
+                        <span class="accordion-title">How does this accordion work?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <p>This accordion uses hidden checkboxes and the <code>:checked</code> pseudo-class to track the state of each accordion item. When a label is clicked, it toggles the associated checkbox.</p>
+                        <p>CSS selectors then target the checkbox state to show or hide content and change the appearance of the header. This creates an interactive component without any JavaScript!</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-3" class="accordion-toggle">
+                    <label for="accordion-3" class="accordion-header">
+                        <span class="accordion-title">Key CSS concepts used</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Adjacent sibling selector:</strong> Used to select elements that come after other specific elements.</li>
+                            <li><strong>:checked pseudo-class:</strong> Targets checkboxes that are in the checked state.</li>
+                            <li><strong>Transitions:</strong> Creating smooth animations between states.</li>
+                            <li><strong>Transform:</strong> Rotating the chevron icon when the section is expanded.</li>
+                            <li><strong>max-height:</strong> Used to animate the content area expanding and collapsing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-4" class="accordion-toggle">
+                    <label for="accordion-4" class="accordion-header">
+                        <span class="accordion-title">Benefits of CSS-only components</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Using CSS-only solutions for interactive components has several advantages:</p>
+                        <ul>
+                            <li>Faster page load times (no JavaScript to download, parse, and execute)</li>
+                            <li>Better performance on low-end devices</li>
+                            <li>Functionality works even when JavaScript is disabled</li>
+                            <li>Simpler maintenance (no need to debug JavaScript errors)</li>
+                            <li>Better browser compatibility with less testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 5 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-5" class="accordion-toggle">
+                    <label for="accordion-5" class="accordion-header">
+                        <span class="accordion-title">Limitations of CSS-only solutions</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <p>While CSS-only solutions are powerful, they do have some limitations:</p>
+                        <ul>
+                            <li>Can't implement more complex business logic</li>
+                            <li>Limited state management (CSS can only track visual states)</li>
+                            <li>Some advanced interactivity requires JavaScript</li>
+                            <li>Might need more complex HTML structures to achieve desired effects</li>
+                            <li>Can be harder to make fully accessible for screen readers without JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 CSS Projects Collection. Created for educational purposes.</p>
+            <a href="../index.html" class="footer-link">Back to All Projects</a>
+        </div>
+    </footer>
+</body>
+</html> 

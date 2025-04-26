@@ -2211,9 +2211,9 @@ function initMobileMenu() {
                 navLinks.classList.remove('active');
                 body.style.overflow = '';
                 
-                // Add special handling for external links like course link
+                // Special handling for external links
                 if (item.getAttribute('target') === '_blank') {
-                    // For external links with target="_blank", we don't need to prevent the default behavior
+                    // For external links, let the default behavior happen
                     return;
                 }
             });
